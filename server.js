@@ -11,11 +11,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
-console.log(process.env.NODE_ENV);
-console.log(process.env.DB);
 
 mongoose.connect('mongodb://localhost:27017/' + process.env.DB);
-
 
 require('./app/routes.food')(app);
 require('./app/routes.user')(app);
