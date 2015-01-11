@@ -1,0 +1,14 @@
+<div class="col-lg-3 col-lg-offset-5 centered">
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Register</h2>
+        <label for="inputFirstname" class="sr-only">Firstname</label>
+        <input type="text" ng-model="formData.firstname" id="inputFirstname" class="form-control" placeholder="First name" required autofocus>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" ng-model="formData.username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" ng-model="formData.password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class = "row spacer"></div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="register()">Submit</button>
+    </form>
+    <div>{{msg}}</div>
+</div>

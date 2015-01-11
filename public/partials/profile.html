@@ -1,0 +1,16 @@
+<div class="col-lg-3 col-lg-offset-5 centered">
+
+  <h3>Profiel van {{name}}</h3>
+
+    <p>This will delete your account forever:</p>
+    <form class="form-signin" role="form">
+        <h3 class="form-signin-heading">Enter your email address here:</h3>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" ng-model="formData.username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <div class = "row small_spacer"></div>
+        <button class="btn btn-primary btn-block" type="submit" ng-click="delete()">Delete!</button>
+          {{msg}}
+      </form>
+    <div></div>
+</div>
+

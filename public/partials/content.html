@@ -1,0 +1,20 @@
+<div class="col-lg-4">
+  <img src="/img/indian-food-2.jpeg" width="70%" height="70%">
+</div>
+<div>{{name}}</div>
+
+<div class="col-lg-6">
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+    <tr ng-repeat="food in foods">
+      <td>{{food.name}}</td>
+      <td>{{food.description}}</td>
+      <td>{{food.price}}</td>
+    </tr>
+  </table>
+</div>
+

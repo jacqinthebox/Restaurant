@@ -1,0 +1,24 @@
+<div class="col-lg-3 col-lg-offset-5 centered">
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Reset your password</h2>
+        <div class="row small_spacer"></div>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" ng-model="formData.password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <div class="row small_spacer"></div>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" ng-model="formData.password2" id="inputPassword2" class="form-control" placeholder="Again your password" required>
+        <div class="row small_spacer"></div>
+
+        <input type="text" ng-hide=true ng-model="formData.uuid" id="uuid" class="form-control" value="{{uuid}}"/>
+
+
+        <div class="row small_spacer"></div>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <button class="btn btn-default btn-primary btn-block" type="submit" ng-click="reset()">Reset</button>
+      </form>
+      <div><strong>{{msg}}</strong></div>
+</div>
+
+
+

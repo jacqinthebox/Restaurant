@@ -1,0 +1,22 @@
+<div class="col-lg-3 col-lg-offset-5 centered">
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Login</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" ng-model="formData.username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <div class="row small_spacer"></div>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" ng-model="formData.password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <input type="checkbox" value="remember-me">Remember me
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Submit</button>
+      </form>
+      <div><strong>{{msg}}</strong></div>
+      <div>No account? Register <a href="#register">here</a>.</div>
+    <div><a href="#forgot">Forgot password?</a>
+    </div>
+</div>
+
+<div>
+
+</div>

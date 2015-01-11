@@ -1,0 +1,35 @@
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home">THE TANDOORI CHICKEN</a>
+            <img src="img/kip.png" width="10%" height="10%">
+        </div>
+
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="home">Home</a>
+                </li>
+                <li><a ui-sref="about">About</a>
+                </li>
+                <li><a ui-sref="contact">Contact</a>
+                </li>
+                <li ng-hide="isAuthenticated">
+                    <a ui-sref="login">Login</a>
+                </li>
+                <li ng-show="isAuthenticated">
+                    <a ui-sref="logout">Logout</a>
+                </li>
+                <li>
+                    <a ui-sref="profile">{{name}}</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>

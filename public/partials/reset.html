@@ -1,0 +1,11 @@
+<div class="col-lg-3 col-lg-offset-5 centered">
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Enter your new password here.</h2>
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" ng-model="formData.password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="forgot()">Submit</button>
+    </form>
+    <div>{{msg}}</div>
+</div>
