@@ -43,5 +43,11 @@ Start the app with:
 NODE_ENV=example node server.js
 ```
 
+Note that you can log on with:
+```
+username: admin@example.com
+password: admin
+```
+
 May you have suggestions for improvement, they are very welcome! Please visit us at [The ButtonFactory](http://www.thebuttonfactory.nl/).
 

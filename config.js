@@ -31,7 +31,15 @@ module.exports = function() {
 
     User.find({}).exec(function (err, collection) {
         if (collection.length === 0) {
-            User.create({"firstname": "Admin", "username": "admin@example.com", "password": 'admin'});
+
+
+            User.register(new User({
+                username: "admin@example.com",
+                firstname: "admin"
+            }), "admin");
+
+
+          //  User.register({"firstname": "Admin", "username": "admin@example.com", "password": 'admin'});
 
         }
     })
