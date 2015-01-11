@@ -8,8 +8,11 @@ module.exports = function() {
         case 'production':
             dotenv._getKeysAndValuesFromEnvFilePath('.env.production');
             break;
+        case 'example':
+            dotenv._getKeysAndValuesFromEnvFilePath('.env.example');
+            break;
         default:
-            dotenv._getKeysAndValuesFromEnvFilePath('.env.development');
+            dotenv._getKeysAndValuesFromEnvFilePath('.env.example');
     }
     return dotenv._setEnvs();
 };
