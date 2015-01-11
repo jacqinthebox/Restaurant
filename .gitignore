@@ -12,10 +12,12 @@ lib-cov
 .env.staging
 .idea
 
+
 pids
 logs
 results
 build
 
 node_modules
+bower_components
 vendor
