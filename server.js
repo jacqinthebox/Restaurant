@@ -1,6 +1,6 @@
 var Config = require('./config'),
     conf = new Config();
-
+console.log(process.env.DB);
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/' + process.env.DB);
+mongoose.connect(process.env.DB);
 
 require('./app/routes.food')(app);
 require('./app/routes.user')(app);
@@ -22,4 +22,4 @@ app.use(express.static(__dirname + '/public'));
 
 app.set('port', process.env.PORT || 3001);
 app.listen(app.get('port'));
-console.log("the server is running on http://localhost:" + app.get('port'));
+console.log("the server is running on http://localhost:" + app.get('port') + ", with database: " + process.env.DB);

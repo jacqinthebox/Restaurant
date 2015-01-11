@@ -6,7 +6,7 @@ var User = require('./model.user');
 exports.getLogin = function (req, res) {
     console.log(req.user);
     if (req.user) {
-        console.log(req.user + " success from get.login method");
+
         return res.send({
             success: true,
             user: req.user
@@ -14,7 +14,7 @@ exports.getLogin = function (req, res) {
 
     } //res.send(500, {status:500, message: 'internal error', type:'internal'}); == deprecated
 
-    console.log(req.user + " fail from get.login method");
+
     res.send({
         success: false,
         message: 'not authorized'
@@ -63,15 +63,14 @@ exports.login = function (req, res, next) {
 
 
 exports.forgot = function (req, res) {
-    console.log("check exist " + req.body.username);
 
     if (req.body.username) {
         //find id that belongs to the user and send it along
         User.findByUsername(req.body.username, function (err, user) {
             //no user found
-            console.log(user);
+
             if (user === null) {
-                console.log("false!! no user found");
+
                 return res.send({
                     success: false,
                     message: "no user with that e-mail address"
@@ -196,8 +195,7 @@ exports.getUuid = function (req, res) {
 exports.reset = function (req, res) {
 
     //find the user
-    console.log(req.body.uuid);
-    User.findOne({
+      User.findOne({
         uuid: req.body.uuid
     }, function (err, user) {
         if (err) return handleError(err);

@@ -2,8 +2,7 @@ var Food = require('./model.food.js');
 
 exports.create = function (req, res) {
     var food = new Food(req.body);
-    console.log(food);
-    food.save(function (err) {
+      food.save(function (err) {
         if (err) {
             return res.send({
                 message: err
