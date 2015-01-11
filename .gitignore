@@ -10,7 +10,7 @@ lib-cov
 .env.development
 .env.production
 .env.staging
-
+.idea
 
 pids
 logs
