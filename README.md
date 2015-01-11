@@ -16,6 +16,10 @@ Hello. This is an example app using the following techniques:
 
 
 ## Run it
+
+Prequisites are Node.js and MongoDb. It works on OSX, Linux (Ubuntu 14.04 and up and Fedora 21). Not sure about Windows.
+
+
 Clone it
 ```
 git clone https://github.com/jacqinthebox/Restaurant.git
