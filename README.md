@@ -25,7 +25,12 @@ Clone it
 git clone https://github.com/jacqinthebox/Restaurant.git
 ```
 
-Cd into the folder. Issue an
+CD into the folder.
+```
+cd Restaurant
+```
+
+Issue an
 
 ```
 npm install
