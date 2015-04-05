@@ -33,6 +33,7 @@ cd Restaurant
 Issue an
 
 ```
+npm -g install dotenv
 npm install
 ```
 
